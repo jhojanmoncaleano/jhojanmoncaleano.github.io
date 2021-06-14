@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+	<title>Portafolio Dinamico - Jhojan Moncaleano</title>
+</head>
+<body>
+
+	<div class="contenedor">
+		<header>
+			
+			
+				<a href="#" class="logotipo" id="logotipo">
+					<div class="texto-animado" id="logo">Jhojan Ramirez</div>
+					<p class="subtitulo">Estudiante</p>
+				</a>
+			
+
+
+			<div class="logo">
+<!-- 
+				<div class="text-1">Hola, mi nombre es </div>
+
+				<h1>Jhojan Moncaleano</h1> -->
+
+
+
+				<div class="text-3 ">Hola mundo, los saluda Jhojan y yo soy  <span class="typing"></span></div>
+		        <main>
+					<div class="contenedor-video">
+						<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+							<source src="img_jr/presentacion1.mov" type="video/mp4">
+						</video>
+				
+						<article>
+							<h2>Autobiografia</h2>
+							<p> <FONT COLOR= "black"> Hola mi nombre es jhojan stiven moncaleano ramirez tengo 23 años actualmente trabajo en una carpinteria, soy estudiante de sexto semestre de mercadeo y publicidad en la universidad ECCI de colombia, estudio en la plataforma de educacion online Platzi donde me he acercado al mundo de la tecnologia lo cual me llamo mucha la atencion he aprendido a manejar conceptos basicos de lenguajes de programacion tales como Javascript y python, tengo conocimientos intermedios en HTML y CSS. Algunos de mis hobbies son jugar futbol y leer libros. </p> </FONT>
+				
+							<p> <FONT COLOR= "black"> Mis proyecciones a futuro son terminar mi carrera universitaria, estudiar a profundidad el lenguaje de python para especializarme en Inteligencia artificial y ciencias de datos, tambien estoy proyectado a profundizar en el lenguaje de programacion Javascript,quiero aprender tanto para poder llevar ese conocimiento a personas que no tenga la posibilidad de educacion ya que la programacion es el futuro del mundo todos debemos aprender de este tema para poder crecer como pais y dejar de ser tan buenos consumidores y mas creadores, por consiguiente me gustaria poder encontrar un trabajo en la industria de la tecnologia para aprender como funciona esta misma.  </p> </FONT>
+						</article>
+					</div>
+				</main>
+
+				<script>
+					var reproductor = videojs('fm-video', {
+						fluid: true
+					});
+				</script>
+
+
+
+
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">ilustraciones</a>
+				<a href="#">certificados</a>
+				<a href="#">blender</a>
+				<a href="#">libros</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="certificados"
+				 data-etiquetas="certificados fundamentosmatematicos"
+				 data-descripcion="Fundamentos de matematicas."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/fundamentosmatematicos.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="blender"
+				 data-etiquetas="blender cubo"
+				 data-descripcion="Cubos diseñados en blender."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/cubo.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+			    data-categoria="certificados"
+			    data-etiquetas="certificados pythonbasico"
+			    data-descripcion="Python basico"
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/pythonbasico.png" alt="">
+		   </div>
+	       </div>
+
+			<div class="item"
+				 data-categoria="blender"
+				 data-etiquetas="blender paisaje "
+				 data-descripcion="Paisaje hecho en blender."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/Copia de paisaje (1).png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+			data-categoria="certificados"
+			data-etiquetas="certificados regresionconpython"
+			data-descripcion="Regresion lineal con python."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/regresionconpython.png" alt="">
+		   </div>
+	       </div>
+
+			<div class="item"
+				 data-categoria="libros"
+				 data-etiquetas="libros elonmusk"
+				 data-descripcion="Elon musk el empresario que anticipa el futuro."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/elonmusk.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+			data-categoria="certificados"
+			data-etiquetas="certificados roadtocode"
+			data-descripcion="Reto de programacion intensivo de seis semanas."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/roadtocode.png" alt="">
+		   </div>
+	       </div>
+
+			<div class="item"
+				 data-categoria="libros"
+				 data-etiquetas="libros piensacomounmonje "
+				 data-descripcion="Piensa como un monje."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/piensacomounmonje.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+			data-categoria="certificados"
+			data-etiquetas="certificados terminaldecomandos"
+			data-descripcion="Introduccion a la terminal y linea de comandos."
+	        >
+		    <div class="item-contenido">
+			   <img src="img_jr/terminaldecomandos.png" alt="">
+		    </div>
+	        </div>
+
+		    <div class="item"
+		    data-categoria="ilustraciones"
+		    data-etiquetas="ilustraciones Logo "
+		    data-descripcion="Fotografia basica.
+			   "
+	        >
+		    <div class="item-contenido">
+			  <img src="img_jr/jhojanimg.png" alt="">
+		    </div>
+	        </div>
+
+			<div class="item"
+			data-categoria="libros"
+			data-etiquetas="libros deceroauno"
+			data-descripcion="De cero a uno ."
+	       >
+		   <div class="item-contenido">
+			   <img src="img_jr/deceroauno.png" alt="">
+		   </div>
+	       </div>
+
+
+
+			<div class="item"
+				 data-categoria="blender"
+				 data-etiquetas="blender cubosiluminados"
+				 data-descripcion="Cubos iluminados hechos en blender."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/cubosiluminados.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+			data-categoria="libros"
+			data-etiquetas="libros 8clavesliderazgo robin sharma"
+			data-descripcion="8 claves del liderazgo ."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/8clavesliderazgo.png" alt="">
+		   </div>
+	       </div>
+
+			<div class="item"
+			data-categoria="ilustraciones"
+			data-etiquetas="ilustraciones Coca_cola "
+			data-descripcion="Ilustracion de Coca cola hecha en photoshop.
+				"
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/Coca_cola.jpg" alt="">
+		   </div>
+	       </div>
+
+		   <div class="item"
+		   data-categoria="libros"
+		   data-etiquetas="libros Nueve-gigantes"
+		   data-descripcion="Nueve Gigantes."
+	       >
+		  <div class="item-contenido">
+			  <img src="img_jr/Nueve-gigantes.png" alt="">
+		  </div>
+	      </div>
+
+			<div class="item" 
+			data-categoria="certificados"
+			data-etiquetas="certificados coolhunting"
+			data-descripcion="Coolhunting y innovacion para el futuro."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/coolhunting.png" alt="">
+		   </div>
+	       </div>
+
+		   <div class="item"
+		   data-categoria="libros"
+		   data-etiquetas="libros aprenderaprogramarpython"
+		   data-descripcion="Aprende a programar con python."
+	       >
+		  <div class="item-contenido">
+			  <img src="img_jr/aprenderaprogramarpython.png" alt="">
+		  </div>
+	      </div>
+
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones budweiser photoshop"
+				 data-descripcion="Diseño grafico de budweiser realizado en photoshop."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/budweiser.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+			data-categoria="certificados"
+			data-etiquetas="certificados git_githubprofesional"
+			data-descripcion="Git y git hub profesional."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/git_githubprofesional.png" alt="">
+		   </div>
+	       </div>
+
+		   <div class="item"
+		   data-categoria="libros"
+		   data-etiquetas="libros cartassecretas"
+		   data-descripcion="Cartas secretas del monje que vendio su ferrari."
+	       >
+		  <div class="item-contenido">
+			  <img src="img_jr/cartassecretas.png" alt="">
+		  </div>
+	      </div>
+
+
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones Revista griezmann"
+				 data-descripcion="Portada de revista realizada en photoshop."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/Revista.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+			data-categoria="libros"
+			data-etiquetas="libros club5am"
+			data-descripcion="Club de las 5 am."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/club5am.png" alt="">
+		   </div>
+	       </div>
+
+			<div class="item" 
+				 data-categoria="certificados"
+				 data-etiquetas="certificados calculobasico"
+				 data-descripcion="Matematicas para data science - calculo basico."
+			>
+				<div class="item-contenido">
+					<img src="img_jr/calculobasico.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+			data-categoria="libros"
+			data-etiquetas="libros estoesmarketing seth godin"
+			data-descripcion="Esto es marketing ."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/estoesmarketing.png" alt="">
+		   </div>
+	       </div>
+
+			<div class="item"
+				 data-categoria="ilustraciones"
+				 data-etiquetas="ilustraciones Logo "
+				 data-descripcion="Logo marca personal hecho en ilustrator.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="img_jr/Logo.png" alt="">
+				</div>
+			</div>
+   
+			<div class="item" 
+			data-categoria="certificados"
+			data-etiquetas="certificados html_cssdefinitivo"
+			data-descripcion= "Definitivo de HTML y CSS."
+	        >
+		   <div class="item-contenido">
+			   <img src="img_jr/html_cssdefinitivo.png" alt="">
+		   </div>
+	       </div>
+            
+
+		   <div class="item"
+		   data-categoria="ilustraciones"
+		   data-etiquetas="ilustraciones Corona "
+		   data-descripcion="Diseño grafico cerveza corona realizado en photoshop.
+			   "
+	       >
+		  <div class="item-contenido">
+			  <img src="img_jr/Corona.jpg" alt="">
+		  </div>
+	      </div>
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://twitter.com/jhojanmoncalea1" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.facebook.com/JohanEstiven.Ramirez/" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.instagram.com/jhojans.moncaleano/?hl=es-la" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Jhojan stiven moncaleano Ramirez</a> - <a href="https://www.facebook.com/JohanEstiven.Ramirez/"> Facebook</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
