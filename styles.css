@@ -251,8 +251,8 @@ opacity: 1;
 
 }
 .skill__item__img{
-  width: 170px;
-  height: 180px;
+  width: 180px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -304,6 +304,13 @@ opacity: 1;
   .container-tips {
     height: 500px;
   }
+  .container-tips_2 {
+    height: 800px;
+  }
+  .container-tips_3 {
+    height: 400px;
+  }
+  
   .container-tips .design__item{
     height: 100%;
   }
@@ -320,6 +327,7 @@ opacity: 1;
 
 .design__item{
   position: relative;
+ 
 }
 .design__item:before {
   content: "";
