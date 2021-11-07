@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0429)https://a.lw.skype.com/Login/silent/MsaCallback?site_name=lw.skype.com&response_type=postmessage&client_id=919866&partner=999&redirect_uri=https%3a%2f%2foutlook.live.com%2fmail%2f0%2finbox%2fid%2fAQMkADAwATM0MDAAMS04OAAyNi0wYjg0LTAwAi0wMAoARgAAA5cd2pl5CUdOizwnIPTA3RMHALKNS0Gav%252BNMmLYV3DN2E5gAAAIBDAAAALKNS0Gav%252BNMmLYV3DN2E5gABPZt0YcAAAA%253D&state=silentloginsdk_1636247024920&session_id=csYEjzkbGjMuAVN8XDOH&wa=wsignin1.0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
+    <title>Skype</title>
+
+    <script type="text/javascript" nonce="">
+        var message = "";
+
+        window.hashFragment = (function () {
+            "use strict";
+
+            return {
+                hashParams: {},
+
+                parseHashParams: function (windowObj) {
+                    var hash,
+                        hashPairs,
+                        hashPair,
+                        delimiterIndex,
+                        key,
+                        value,
+                        ind;
+
+                    windowObj = windowObj ? windowObj : window;
+                    hash = windowObj.location.hash.replace("#", "");
+                    this.hashParams = {};
+                    hashPairs = hash.split("&");
+                    for (ind in hashPairs) {
+                        hashPair = hashPairs[ind];
+                        delimiterIndex = hashPair.indexOf("=");
+                        if (delimiterIndex >= 0) {
+                            key = decodeURIComponent(hashPair.substring(0, delimiterIndex)).toLowerCase();
+                            value = decodeURIComponent(hashPair.substring(delimiterIndex + 1));
+                            this.hashParams[key] = value;
+                        }
+                    }
+                },
+                getHashParam: function (key) {
+                    return this.hashParams[key.toLowerCase()];
+                }
+            };
+        })();
+
+        (function () {
+            var target = "https://outlook.live.com/mail/0/inbox/id/AQMkADAwATM0MDAAMS04OAAyNi0wYjg0LTAwAi0wMAoARgAAA5cd2pl5CUdOizwnIPTA3RMHALKNS0Gav%2BNMmLYV3DN2E5gAAAIBDAAAALKNS0Gav%2BNMmLYV3DN2E5gABPZt0YcAAAA%3D",
+                messageObject = {"skypetoken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMyIsIng1dCI6Ikc5WVVVTFMwdlpLQTJUNjFGM1dzYWdCdmFMbyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzYyNDcwMjYsImV4cCI6MTYzNjMzMzQyNSwic2t5cGVpZCI6ImxpdmU6MjJlc3RpdmVuIiwic2NwIjo5NTgsImNzaSI6IjE2MzYyNDcwMjUiLCJjaWQiOiJkZGM0ZDdkMzFiYWY0YmQ2IiwiYWF0IjoxNjM2MjQ3MDA4fQ.YWLtNCwF47xSKt7An1d5HVjxRlS4Z84COTshINvgQJ0_EStHOJOggKtLjwgxzOrJMQ4fx-HxmQq-gdjHfyzyIlVQpRfxqLhZFSk1mN2Ts7JPzvpu1h5D9bhLl1Rh2Ztnfqn9a8JV0XM0GUnGqUa5j1XlGiLWraGq4fR2Ict08yWNP3BRQf6uGi479N2GwBOX4B6kdeC1SdEv91Z2effjNUXm45YOMUTNl_35anLfeZKUslWjK547JKgsQjOSg3KR_Ik99JWj8SiVlSfp-H8V2kTQoEoBR3Y8aNkFl8mkhm2jRoyS2SOWGu3tYNGmEs-qgNa31vac92Ur9xvxA5JaMg","expires_in":"86398","skypeid":"live:22estiven","signinname":"22estiven@hotmail.es","state":"silentloginsdk_1636247024920"};
+
+            window.hashFragment.parseHashParams();
+            var error = window.hashFragment.getHashParam("error");
+            var errorDescription = window.hashFragment.getHashParam("error_description");
+
+            if (!!error && error.length) {
+                messageObject.error = error;
+                messageObject.error_description = errorDescription;
+            }
+            
+            var message = JSON.stringify(messageObject);
+
+            if (!!window.opener) {                              // Send postMessage from a Popup and close window
+                window.opener.postMessage(message, target);
+                window.close();
+            } else if (!!window.parent) {                       // Send postMessage from an Iframe
+                window.parent.postMessage(message, target);
+            }
+        }());
+    </script>
+</head>
+<body>
+
+</body></html>

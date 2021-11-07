@@ -1,0 +1,3 @@
+self.scriptsLoaded = self.scriptsLoaded || {}; self.scriptProcessStart = self.scriptProcessStart || {}; self.scriptProcessStart['owa.2066.js'] = (new Date()).getTime();(window.$wj=window.$wj||[]).push([[2066],{19608:function(n,t,r){"use strict";function e(n,t){if(t&&t.length>0){let r=[];return t.forEach(t=>{t&&t.id&&-1!=n.indexOf(t.id)&&t.ancestorIds&&r.push(...t.ancestorIds)}),r.length>0?r:n}return n}r.r(t),r.d(t,"getIdsForTriageActions",(function(){return e}))}}]);
+//# sourceMappingURL=owa.2066.js.map
+self.scriptsLoaded['owa.2066.js'] = 1; self.scriptProcessEnd = self.scriptProcessEnd || {}; self.scriptProcessEnd['owa.2066.js'] = (new Date()).getTime();
