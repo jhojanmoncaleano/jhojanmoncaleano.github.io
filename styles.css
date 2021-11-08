@@ -59,6 +59,15 @@ section {
 .navbar__title {
   font-size: 24px;
 }
+.navbar__logo_2{
+  display: flexbox;
+  align-items: center;
+}
+
+.navbar__title_2{
+  font-size: 12px;
+  justify-content: center;
+}
 
 .navbar__title::before {
   content: "<";
@@ -218,6 +227,21 @@ section {
   transition: all 0.3s;
   min-width: 130px;
 
+  align-items: flex-start;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  bottom: 0;
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 0;
+  /* opacity: 0; */
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
 
   /* transition: 450ms -webkit-transform;
   transition: 450ms transform;
@@ -251,7 +275,12 @@ opacity: 1;
 
 }
 .skill__item__img{
-  width: 180px;
+  width: 200px;
+  height: 250px;
+  -o-object-fit: scale-down;
+     object-fit: cover;
+
+  width: 200px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
