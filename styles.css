@@ -642,24 +642,3 @@ opacity: 1;
 
 
 
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1200px;
-  }
-  .design__title{
-    font-size: 2.5em;
-  }
-  .design__item{
-    height: 500px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .container {
-    width: 1400px;
-  }
-  .banner__title, .banner__txt {
-    font-size: 2em;
-  }
-}
-
-
